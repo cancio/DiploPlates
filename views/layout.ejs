@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<div>
+			<h1>Diplomatic Plate Search</h1>
+			<form method='POST' action='/submit'><input type='text' name='query'></form>
+		</div>
+		<%- body %>
+		<div>
+			<%- blocks.results%>
+		</div>
+	</body>
+</html>
