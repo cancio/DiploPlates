@@ -1,7 +1,6 @@
 var port = process.env.PORT || 8080,
 	app = require('./app').init(port),
-	redis = require('redis'),
-	client = redis.createClient(),
+	client = require('redis-url').connect(process.env.REDISTOGO_URL);
 	twilio = require('twilio')("ACcf24461fc9b7062760b47913b7ecbe58", "2c37f04613e074bf4e917dec14b11c8d");
 
 // define the routes
