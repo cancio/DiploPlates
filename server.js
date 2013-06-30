@@ -56,21 +56,21 @@ app.post('/submit', function(req,res){
 });
 
 app.post('/respondToSMS', function(req, res){
-	//if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
+	if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim();
 		res.header('Content-Type', 'text/xml');
 		client.get(query, function(err, reply){
 			if (reply != null){
 				console.log('Reply: ' + reply.toString());
 				result = reply.toString();
-				res.send('<Response>' + query + ': ' + result + '</Response>');
+				res.send('<Response>' + result + '</Response>');
 			}
 			else {
 				res.send('<Response>No plate found for ' + query + '</Response>');
 			}
 		});
-	//}
-	//else {
-	//	res.send('You are not twilio. Buzz off');
-	//}
+	}
+	else {
+		res.send('You are not twilio. Buzz off');
+	}
 });
