@@ -56,7 +56,7 @@ app.post('/submit', function(req,res){
 });
 
 app.post('/respondToSMS', function(req, res){
-	if(twilClient.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
+	if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim();
 		res.header('Content-Type', 'text/xml');
 		client.get(query, function(err, reply){
