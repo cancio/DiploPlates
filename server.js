@@ -1,8 +1,8 @@
 var port = process.env.PORT || 8080,
 	app = require('./app').init(port),
 	client = require('redis-url').connect(process.env.REDISTOGO_URL);
-	twilio = require('twilio')("ACcf24461fc9b7062760b47913b7ecbe58", "2c37f04613e074bf4e917dec14b11c8d");
-
+	twilio = require('twilio'),
+	twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 loadCountries();
 
 function loadCountries(){
@@ -56,7 +56,7 @@ app.post('/submit', function(req,res){
 });
 
 app.post('/respondToSMS', function(req, res){
-	if(twilio.validateExpressRequest(req, '2c37f04613e074bf4e917dec14b11c8d')) {
+	if(twilClient.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim();
 		res.header('Content-Type', 'text/xml');
 		client.get(query, function(err, reply){
