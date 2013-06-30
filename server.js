@@ -55,7 +55,7 @@ app.post('/submit', function(req,res){
 	});
 });
 
-app.post('respondToSMS', function(req, res){
+app.post('/respondToSMS', function(req, res){
 	if(twilio.validateExpressRequest(req, '2c37f04613e074bf4e917dec14b11c8d')) {
 		var query = req.param('Body').trim();
 		res.header('Content-Type', 'text/xml');
