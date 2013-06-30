@@ -3,6 +3,26 @@ var port = process.env.PORT || 8080,
 	client = require('redis-url').connect(process.env.REDISTOGO_URL);
 	twilio = require('twilio')("ACcf24461fc9b7062760b47913b7ecbe58", "2c37f04613e074bf4e917dec14b11c8d");
 
+function loadCountries(){
+	var codes = ["AA",
+                   "AC",
+                   "AE",
+                   "AF",
+                   "AH",
+                   "AJ"];
+    var countries = ["Congo",
+       					"Cote d'Ivoire",
+       					"Uzbekistan",
+       					"Japan",
+       					"Madagascar",
+       					"Panama"];
+    for (var i = 0; i < codes.length; i++){
+    	client.set(codes[i], countries[i], function(err, reply){
+    		console.log(reply.toString());
+    	});
+    }
+}
+
 // define the routes
 app.get('*', function(req,res,next){
 	// this is called for every GET request
@@ -52,24 +72,3 @@ app.post('respondToSMS', function(req, res){
 		res.send('You are not twilio. Buzz off');
 	}
 });
-		
-
-function loadCountries(){
-	var codes = ["AA",
-                   "AC",
-                   "AE",
-                   "AF",
-                   "AH",
-                   "AJ"];
-    var countries = ["Congo",
-       					"Cote d'Ivoire",
-       					"Uzbekistan",
-       					"Japan",
-       					"Madagascar",
-       					"Panama"];
-    for (var i = 0; i < codes.length; i++){
-    	client.set(codes[i], countries[i], function(err, reply){
-    		console.log(reply.toString());
-    	});
-    }
-}
