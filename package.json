@@ -5,7 +5,7 @@
 		"express": "3.1.x",
 		"ejs-locals": "*",
 		"redis": "*",
-		"twilio": "*"
+		"twilio": "*",
 		"redis-url": "0.1.0"
 		},
 	"engines": {
