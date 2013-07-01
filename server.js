@@ -2,27 +2,25 @@ var port = process.env.PORT || 8080,
 	app = require('./app').init(port),
 	client = require('redis-url').connect(process.env.REDISTOGO_URL);
 	twilio = require('twilio'),
-	twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
+	twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN),
+	fs = require('fs');
+
 loadCountries();
 
 function loadCountries(){
-	var codes = ["AA",
-                   "AC",
-                   "AE",
-                   "AF",
-                   "AH",
-                   "AJ"];
-    var countries = ["Congo",
-       					"Cote d'Ivoire",
-       					"Uzbekistan",
-       					"Japan",
-       					"Madagascar",
-       					"Panama"];
-    for (var i = 0; i < codes.length; i++){
-    	client.set(codes[i], countries[i], function(err, reply){
-    		console.log(reply.toString());
-    	});
-    }
+	var currline = [];
+	fs.readFile('./countryList.txt', 'utf-8', function(err, data){
+		if (err) throw err;
+		
+		var lines = data.toString().trim().split('\n');
+		
+		for (var i = 0; i < lines.length; i++){
+			currline = lines[i].split(',');
+		    client.set(currline[0], currline[1], function(err, reply){
+    			console.log(reply.toString());
+    		});
+		}
+	});
 }
 
 // define the routes
@@ -41,7 +39,7 @@ app.get('/', function(req,res){
 
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
-	var query = req.body.query;
+	var query = req.body.query.toUpperCase();
 	var result = '';
 	client.get(query, function(err, reply){
 		if (reply != null){
@@ -57,7 +55,7 @@ app.post('/submit', function(req,res){
 
 app.post('/respondToSMS', function(req, res){
 	//if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
-		var query = req.param('Body').trim();
+		var query = req.param('Body').trim().toUpperCase();
 		res.header('Content-Type', 'text/xml');
 		client.get(query, function(err, reply){
 			if (reply != null){
