@@ -63,10 +63,10 @@ app.post('/respondToSMS', function(req, res){
 			if (reply != null){
 				console.log('Reply: ' + reply.toString());
 				result = reply.toString();
-				res.send('<Response>' + result + '</Response>');
+				res.send('<Response><Sms>' + result + '</Sms></Response>');
 			}
 			else {
-				res.send('<Response>No plate found for ' + query + '</Response>');
+				res.send('<Response><Sms>No plate found for ' + query + '</Sms></Response>');
 			}
 		});
 	//}
