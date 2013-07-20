@@ -34,6 +34,7 @@ app.get('*', function(req,res,next){
 /* home page route */
 app.get('/', function(req,res){
 	console.log('Index loaded');
+	res.render('index');
 });
 
 app.post('/submit', function(req,res){
