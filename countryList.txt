@@ -1,215 +1,1075 @@
-AA,Republic of the Congo|Congo
+AA,Republic of the Congo
+CAA,Republic of the Congo Consul
+DAA,Republic of the Congo Diplomat
+SAA,Republic of the Congo Staff
+AAD,Republic of the Congo UN Diplomat
 AC,Cote d'Ivoire
+CAC,Cote d'Ivoire Consul
+DAC,Cote d'Ivoire Diplomat
+SAC,Cote d'Ivoire Staff
+ACD,Cote d'Ivoire UN Diplomat
 AE,Uzbekistan
+CAE,Uzbekistan Consul
+DAE,Uzbekistan Diplomat
+SAE,Uzbekistan Staff
+AED,Uzbekistan UN Diplomat
 AF,Japan
+CAF,Japan Consul
+DAF,Japan Diplomat
+SAF,Japan Staff
+AFD,Japan UN Diplomat
 AH,Madagascar
+CAH,Madagascar Consul
+DAH,Madagascar Diplomat
+SAH,Madagascar Staff
+AHD,Madagascar UN Diplomat
 AJ,Panama
+CAJ,Panama Consul
+DAJ,Panama Diplomat
+SAJ,Panama Staff
+AJD,Panama UN Diplomat
 AK,Cape Verde
+CAK,Cape Verde Consul
+DAK,Cape Verde Diplomat
+SAK,Cape Verde Staff
+AKD,Cape Verde UN Diplomat
 AQ,Syria
+CAQ,Syria Consul
+DAQ,Syria Diplomat
+SAQ,Syria Staff
+AQD,Syria UN Diplomat
 AU,Uganda
+CAU,Uganda Consul
+DAU,Uganda Diplomat
+SAU,Uganda Staff
+AUD,Uganda UN Diplomat
 AV,Israel
+CAV,Israel Consul
+DAV,Israel Diplomat
+SAV,Israel Staff
+AVD,Israel UN Diplomat
 AX,Marshall Islands
+CAX,Marshall Islands Consul
+DAX,Marshall Islands Diplomat
+SAX,Marshall Islands Staff
+AXD,Marshall Islands UN Diplomat
 BL,South Africa
+CBL,South Africa Consul
+DBL,South Africa Diplomat
+SBL,South Africa Staff
+BLD,South Africa UN Diplomat
 BV,Solomon Islands
+CBV,Solomon Islands Consul
+DBV,Solomon Islands Diplomat
+SBV,Solomon Islands Staff
+BVD,Solomon Islands UN Diplomat
 BW,World Bank
+CBW,World Bank Consul
+DBW,World Bank Diplomat
+SBW,World Bank Staff
+BWD,World Bank UN Diplomat
 CB,Cambodia
+CCB,Cambodia Consul
+DCB,Cambodia Diplomat
+SCB,Cambodia Staff
+CBD,Cambodia UN Diplomat
 CC,Ethiopia
+CCC,Ethiopia Consul
+DCC,Ethiopia Diplomat
+SCC,Ethiopia Staff
+CCD,Ethiopia UN Diplomat
 CG,Marshall Islands
+CCG,Marshall Islands Consul
+DCG,Marshall Islands Diplomat
+SCG,Marshall Islands Staff
+CGD,Marshall Islands UN Diplomat
 CK,Namibia
+CCK,Namibia Consul
+DCK,Namibia Diplomat
+SCK,Namibia Staff
+CKD,Namibia UN Diplomat
 CM,Micronesia
+CCM,Micronesia Consul
+DCM,Micronesia Diplomat
+SCM,Micronesia Staff
+CMD,Micronesia UN Diplomat
 CN,International Organization
+CCN,International Organization Consul
+DCN,International Organization Diplomat
+SCN,International Organization Staff
+CND,International Organization UN Diplomat
 CS,Afghanistan
+CCS,Afghanistan Consul
+DCS,Afghanistan Diplomat
+SCS,Afghanistan Staff
+CSD,Afghanistan UN Diplomat
 CT,Bhutan
+CCT,Bhutan Consul
+DCT,Bhutan Diplomat
+SCT,Bhutan Staff
+CTD,Bhutan UN Diplomat
 CU,Botswana
+CCU,Botswana Consul
+DCU,Botswana Diplomat
+SCU,Botswana Staff
+CUD,Botswana UN Diplomat
 CV,Myanmar (Burma)
+CCV,Myanmar (Burma) Consul
+DCV,Myanmar (Burma) Diplomat
+SCV,Myanmar (Burma) Staff
+CVD,Myanmar (Burma) UN Diplomat
 CW,Cameroon
+CCW,Cameroon Consul
+DCW,Cameroon Diplomat
+SCW,Cameroon Staff
+CWD,Cameroon UN Diplomat
 CX,Burundi
+CCX,Burundi Consul
+DCX,Burundi Diplomat
+SCX,Burundi Staff
+CXD,Burundi UN Diplomat
 CY,People's Republic of China
+CCY,People's Republic of China Consul
+DCY,People's Republic of China Diplomat
+SCY,People's Republic of China Staff
+CYD,People's Republic of China UN Diplomat
 DA,Colombia
+CDA,Colombia Consul
+DDA,Colombia Diplomat
+SDA,Colombia Staff
+DAD,Colombia UN Diplomat
 DB,Costa Rica
+CDB,Costa Rica Consul
+DDB,Costa Rica Diplomat
+SDB,Costa Rica Staff
+DBD,Costa Rica UN Diplomat
 DC,Cuba (UN only)
+CDC,Cuba (UN only) Consul
+DDC,Cuba (UN only) Diplomat
+SDC,Cuba (UN only) Staff
+DCD,Cuba (UN only) UN Diplomat
 DD,Cyprus
+CDD,Cyprus Consul
+DDD,Cyprus Diplomat
+SDD,Cyprus Staff
+DDD,Cyprus UN Diplomat
 DF,Dominican Republic
+CDF,Dominican Republic Consul
+DDF,Dominican Republic Diplomat
+SDF,Dominican Republic Staff
+DFD,Dominican Republic UN Diplomat
 DG,Ecuador
+CDG,Ecuador Consul
+DDG,Ecuador Diplomat
+SDG,Ecuador Staff
+DGD,Ecuador UN Diplomat
 DH,Cote d'Ivoire
+CDH,Cote d'Ivoire Consul
+DDH,Cote d'Ivoire Diplomat
+SDH,Cote d'Ivoire Staff
+DHD,Cote d'Ivoire UN Diplomat
 DI,South Africa
+CDI,South Africa Consul
+DDI,South Africa Diplomat
+SDI,South Africa Staff
+DID,South Africa UN Diplomat
 DJ,France
+CDJ,France Consul
+DDJ,France Diplomat
+SDJ,France Staff
+DJD,France UN Diplomat
 DK,Greece
+CDK,Greece Consul
+DDK,Greece Diplomat
+SDK,Greece Staff
+DKD,Greece UN Diplomat
 DL,India
+CDL,India Consul
+DDL,India Diplomat
+SDL,India Staff
+DLD,India UN Diplomat
 DM,Iran (UN only)
+CDM,Iran (UN only) Consul
+DDM,Iran (UN only) Diplomat
+SDM,Iran (UN only) Staff
+DMD,Iran (UN only) UN Diplomat
 DN,Denmark
+CDN,Denmark Consul
+DDN,Denmark Diplomat
+SDN,Denmark Staff
+DND,Denmark UN Diplomat
 DP,Bangladesh
+CDP,Bangladesh Consul
+DDP,Bangladesh Diplomat
+SDP,Bangladesh Staff
+DPD,Bangladesh UN Diplomat
 DR,Slovakia
+CDR,Slovakia Consul
+DDR,Slovakia Diplomat
+SDR,Slovakia Staff
+DRD,Slovakia UN Diplomat
 DZ,Palau
+CDZ,Palau Consul
+DDZ,Palau Diplomat
+SDZ,Palau Staff
+DZD,Palau UN Diplomat
 FF,Antigua & Barbuda
+CFF,Antigua & Barbuda Consul
+DFF,Antigua & Barbuda Diplomat
+SFF,Antigua & Barbuda Staff
+FFD,Antigua & Barbuda UN Diplomat
 FG,Central African Republic
+CFG,Central African Republic Consul
+DFG,Central African Republic Diplomat
+SFG,Central African Republic Staff
+FGD,Central African Republic UN Diplomat
 FH,Ireland
+CFH,Ireland Consul
+DFH,Ireland Diplomat
+SFH,Ireland Staff
+FHD,Ireland UN Diplomat
 FJ,Lebanon
+CFJ,Lebanon Consul
+DFJ,Lebanon Diplomat
+SFJ,Lebanon Staff
+FJD,Lebanon UN Diplomat
 FK,Kenya
+CFK,Kenya Consul
+DFK,Kenya Diplomat
+SFK,Kenya Staff
+FKD,Kenya UN Diplomat
 FL,Liberia
+CFL,Liberia Consul
+DFL,Liberia Diplomat
+SFL,Liberia Staff
+FLD,Liberia UN Diplomat
 FM,Libya
+CFM,Libya Consul
+DFM,Libya Diplomat
+SFM,Libya Staff
+FMD,Libya UN Diplomat
 FN,Malta
+CFN,Malta Consul
+DFN,Malta Diplomat
+SFN,Malta Staff
+FND,Malta UN Diplomat
 FP,Morocco
+CFP,Morocco Consul
+DFP,Morocco Diplomat
+SFP,Morocco Staff
+FPD,Morocco UN Diplomat
 FR,Philippines
+CFR,Philippines Consul
+DFR,Philippines Diplomat
+SFR,Philippines Staff
+FRD,Philippines UN Diplomat
 FS,Netherlands
+CFS,Netherlands Consul
+DFS,Netherlands Diplomat
+SFS,Netherlands Staff
+FSD,Netherlands UN Diplomat
 FT,Qatar
+CFT,Qatar Consul
+DFT,Qatar Diplomat
+SFT,Qatar Staff
+FTD,Qatar UN Diplomat
 FV,Sri Lanka
+CFV,Sri Lanka Consul
+DFV,Sri Lanka Diplomat
+SFV,Sri Lanka Staff
+FVD,Sri Lanka UN Diplomat
 FW,Holy See
+CFW,Holy See Consul
+DFW,Holy See Diplomat
+SFW,Holy See Staff
+FWD,Holy See UN Diplomat
 FX,Sierra Leone
+CFX,Sierra Leone Consul
+DFX,Sierra Leone Diplomat
+SFX,Sierra Leone Staff
+FXD,Sierra Leone UN Diplomat
 FZ,Suriname
+CFZ,Suriname Consul
+DFZ,Suriname Diplomat
+SFZ,Suriname Staff
+FZD,Suriname UN Diplomat
 GC,Sweden
+CGC,Sweden Consul
+DGC,Sweden Diplomat
+SGC,Sweden Staff
+GCD,Sweden UN Diplomat
 GD,Ukraine
+CGD,Ukraine Consul
+DGD,Ukraine Diplomat
+SGD,Ukraine Staff
+GDD,Ukraine UN Diplomat
 GG,Zambia
+CGG,Zambia Consul
+DGG,Zambia Diplomat
+SGG,Zambia Staff
+GGD,Zambia UN Diplomat
 GN,Turkey
+CGN,Turkey Consul
+DGN,Turkey Diplomat
+SGN,Turkey Staff
+GND,Turkey UN Diplomat
 GP,Albania
+CGP,Albania Consul
+DGP,Albania Diplomat
+SGP,Albania Staff
+GPD,Albania UN Diplomat
 GQ,North Korea
+CGQ,North Korea Consul
+DGQ,North Korea Diplomat
+SGQ,North Korea Staff
+GQD,North Korea UN Diplomat
 GX,Vanuatu
+CGX,Vanuatu Consul
+DGX,Vanuatu Diplomat
+SGX,Vanuatu Staff
+GXD,Vanuatu UN Diplomat
 GY,Chile
+CGY,Chile Consul
+DGY,Chile Diplomat
+SGY,Chile Staff
+GYD,Chile UN Diplomat
 HB,Tonga
+CHB,Tonga Consul
+DHB,Tonga Diplomat
+SHB,Tonga Staff
+HBD,Tonga UN Diplomat
 HD,Argentina
+CHD,Argentina Consul
+DHD,Argentina Diplomat
+SHD,Argentina Staff
+HDD,Argentina UN Diplomat
 HL,Saint Lucia
+CHL,Saint Lucia Consul
+DHL,Saint Lucia Diplomat
+SHL,Saint Lucia Staff
+HLD,Saint Lucia UN Diplomat
 HM,Andorra
+CHM,Andorra Consul
+DHM,Andorra Diplomat
+SHM,Andorra Staff
+HMD,Andorra UN Diplomat
 HN,Mongolia
+CHN,Mongolia Consul
+DHN,Mongolia Diplomat
+SHN,Mongolia Staff
+HND,Mongolia UN Diplomat
 HV,Belgium
+CHV,Belgium Consul
+DHV,Belgium Diplomat
+SHV,Belgium Staff
+HVD,Belgium UN Diplomat
 HW,Guatemala
+CHW,Guatemala Consul
+DHW,Guatemala Diplomat
+SHW,Guatemala Staff
+HWD,Guatemala UN Diplomat
 HX,Benin
+CHX,Benin Consul
+DHX,Benin Diplomat
+SHX,Benin Staff
+HXD,Benin UN Diplomat
 HY,Guinea Bissau
+CHY,Guinea Bissau Consul
+DHY,Guinea Bissau Diplomat
+SHY,Guinea Bissau Staff
+HYD,Guinea Bissau UN Diplomat
 HZ,Haiti
+CHZ,Haiti Consul
+DHZ,Haiti Diplomat
+SHZ,Haiti Staff
+HZD,Haiti UN Diplomat
 JB,Honduras
+CJB,Honduras Consul
+DJB,Honduras Diplomat
+SJB,Honduras Staff
+JBD,Honduras UN Diplomat
 JC,Kuwait
+CJC,Kuwait Consul
+DJC,Kuwait Diplomat
+SJC,Kuwait Staff
+JCD,Kuwait UN Diplomat
 JD,Mauritius
+CJD,Mauritius Consul
+DJD,Mauritius Diplomat
+SJD,Mauritius Staff
+JDD,Mauritius UN Diplomat
 JF,Nigeria
+CJF,Nigeria Consul
+DJF,Nigeria Diplomat
+SJF,Nigeria Staff
+JFD,Nigeria UN Diplomat
 JG,Portugal
+CJG,Portugal Consul
+DJG,Portugal Diplomat
+SJG,Portugal Staff
+JGD,Portugal UN Diplomat
 JH,Somalia
+CJH,Somalia Consul
+DJH,Somalia Diplomat
+SJH,Somalia Staff
+JHD,Somalia UN Diplomat
 JJ,Chad
+CJJ,Chad Consul
+DJJ,Chad Diplomat
+SJJ,Chad Staff
+JJD,Chad UN Diplomat
 JK,Turkey
+CJK,Turkey Consul
+DJK,Turkey Diplomat
+SJK,Turkey Staff
+JKD,Turkey UN Diplomat
 JM,Yugoslavia
+CJM,Yugoslavia Consul
+DJM,Yugoslavia Diplomat
+SJM,Yugoslavia Staff
+JMD,Yugoslavia UN Diplomat
 JP,Tunisia
+CJP,Tunisia Consul
+DJP,Tunisia Diplomat
+SJP,Tunisia Staff
+JPD,Tunisia UN Diplomat
 JQ,Togo
+CJQ,Togo Consul
+DJQ,Togo Diplomat
+SJQ,Togo Staff
+JQD,Togo UN Diplomat
 JS,Slovenia
+CJS,Slovenia Consul
+DJS,Slovenia Diplomat
+SJS,Slovenia Staff
+JSD,Slovenia UN Diplomat
 JT,Croatia
+CJT,Croatia Consul
+DJT,Croatia Diplomat
+SJT,Croatia Staff
+JTD,Croatia UN Diplomat
 JY,Cyprus
+CJY,Cyprus Consul
+DJY,Cyprus Diplomat
+SJY,Cyprus Staff
+JYD,Cyprus UN Diplomat
 KB,Monaco
+CKB,Monaco Consul
+DKB,Monaco Diplomat
+SKB,Monaco Staff
+KBD,Monaco UN Diplomat
 KD,Eritrea
+CKD,Eritrea Consul
+DKD,Eritrea Diplomat
+SKD,Eritrea Staff
+KDD,Eritrea UN Diplomat
 KG,Equatorial Guinea
+CKG,Equatorial Guinea Consul
+DKG,Equatorial Guinea Diplomat
+SKG,Equatorial Guinea Staff
+KGD,Equatorial Guinea UN Diplomat
 KH,Hungary
+CKH,Hungary Consul
+DKH,Hungary Diplomat
+SKH,Hungary Staff
+KHD,Hungary UN Diplomat
 KJ,Lithuania
+CKJ,Lithuania Consul
+DKJ,Lithuania Diplomat
+SKJ,Lithuania Staff
+KJD,Lithuania UN Diplomat
 KK,Fiji
+CKK,Fiji Consul
+DKK,Fiji Diplomat
+SKK,Fiji Staff
+KKD,Fiji UN Diplomat
 KL,Jordan
+CKL,Jordan Consul
+DKL,Jordan Diplomat
+SKL,Jordan Staff
+KLD,Jordan UN Diplomat
 KM,Jamaica
+CKM,Jamaica Consul
+DKM,Jamaica Diplomat
+SKM,Jamaica Staff
+KMD,Jamaica UN Diplomat
 KN,Gabon
+CKN,Gabon Consul
+DKN,Gabon Diplomat
+SKN,Gabon Staff
+KND,Gabon UN Diplomat
 KP,Luxembourg
+CKP,Luxembourg Consul
+DKP,Luxembourg Diplomat
+SKP,Luxembourg Staff
+KPD,Luxembourg UN Diplomat
 KR,Malaysia
+CKR,Malaysia Consul
+DKR,Malaysia Diplomat
+SKR,Malaysia Staff
+KRD,Malaysia UN Diplomat
 KS,Mexico
+CKS,Mexico Consul
+DKS,Mexico Diplomat
+SKS,Mexico Staff
+KSD,Mexico UN Diplomat
 KU,Sao Tome & Principe
+CKU,Sao Tome & Principe Consul
+DKU,Sao Tome & Principe Diplomat
+SKU,Sao Tome & Principe Staff
+KUD,Sao Tome & Principe UN Diplomat
 KV,Saudi Arabia
+CKV,Saudi Arabia Consul
+DKV,Saudi Arabia Diplomat
+SKV,Saudi Arabia Staff
+KVD,Saudi Arabia UN Diplomat
 KW,Seychelles
+CKW,Seychelles Consul
+DKW,Seychelles Diplomat
+SKW,Seychelles Staff
+KWD,Seychelles UN Diplomat
 KX,Sudan
+CKX,Sudan Consul
+DKX,Sudan Diplomat
+SKX,Sudan Staff
+KXD,Sudan UN Diplomat
 LC,Venezuela
+CLC,Venezuela Consul
+DLC,Venezuela Diplomat
+SLC,Venezuela Staff
+LCD,Venezuela UN Diplomat
 LD,Vietnam
+CLD,Vietnam Consul
+DLD,Vietnam Diplomat
+SLD,Vietnam Staff
+LDD,Vietnam UN Diplomat
 LG,Turkey
+CLG,Turkey Consul
+DLG,Turkey Diplomat
+SLG,Turkey Staff
+LGD,Turkey UN Diplomat
 LH,Israel
+CLH,Israel Consul
+DLH,Israel Diplomat
+SLH,Israel Staff
+LHD,Israel UN Diplomat
 LJ,Israel
+CLJ,Israel Consul
+DLJ,Israel Diplomat
+SLJ,Israel Staff
+LJD,Israel UN Diplomat
 LK,European Economic Communities
+CLK,European Economic Communities Consul
+DLK,European Economic Communities Diplomat
+SLK,European Economic Communities Staff
+LKD,European Economic Communities UN Diplomat
 LM,Republic of Macedonia|Macedonia
+CLM,Republic of Macedonia|Macedonia Consul
+DLM,Republic of Macedonia|Macedonia Diplomat
+SLM,Republic of Macedonia|Macedonia Staff
+LMD,Republic of Macedonia|Macedonia UN Diplomat
 LR,Bosnia-Herzegovina
+CLR,Bosnia-Herzegovina Consul
+DLR,Bosnia-Herzegovina Diplomat
+SLR,Bosnia-Herzegovina Staff
+LRD,Bosnia-Herzegovina UN Diplomat
 LW,Germany
+CLW,Germany Consul
+DLW,Germany Diplomat
+SLW,Germany Staff
+LWD,Germany UN Diplomat
 MF,International Monetary Fund
+CMF,International Monetary Fund Consul
+DMF,International Monetary Fund Diplomat
+SMF,International Monetary Fund Staff
+MFD,International Monetary Fund UN Diplomat
 MG,UNKNOWN
+CMG,UNKNOWN Consul
+DMG,UNKNOWN Diplomat
+SMG,UNKNOWN Staff
+MGD,UNKNOWN UN Diplomat
 MK,Djibouti
+CMK,Djibouti Consul
+DMK,Djibouti Diplomat
+SMK,Djibouti Staff
+MKD,Djibouti UN Diplomat
 MN,Comoros
+CMN,Comoros Consul
+DMN,Comoros Diplomat
+SMN,Comoros Staff
+MND,Comoros UN Diplomat
 MP,Bahamas
+CMP,Bahamas Consul
+DMP,Bahamas Diplomat
+SMP,Bahamas Staff
+MPD,Bahamas UN Diplomat
 MW,Maldives
+CMW,Maldives Consul
+DMW,Maldives Diplomat
+SMW,Maldives Staff
+MWD,Maldives UN Diplomat
 NA,Oman
+CNA,Oman Consul
+DNA,Oman Diplomat
+SNA,Oman Staff
+NAD,Oman UN Diplomat
 NB,Papua New Guinea
+CNB,Papua New Guinea Consul
+DNB,Papua New Guinea Diplomat
+SNB,Papua New Guinea Staff
+NBD,Papua New Guinea UN Diplomat
 NC,Paraguay
+CNC,Paraguay Consul
+DNC,Paraguay Diplomat
+SNC,Paraguay Staff
+NCD,Paraguay UN Diplomat
 ND,Romania
+CND,Romania Consul
+DND,Romania Diplomat
+SND,Romania Staff
+NDD,Romania UN Diplomat
 NQ,Angola
+CNQ,Angola Consul
+DNQ,Angola Diplomat
+SNQ,Angola Staff
+NQD,Angola UN Diplomat
 NX,Malaysia
+CNX,Malaysia Consul
+DNX,Malaysia Diplomat
+SNX,Malaysia Staff
+NXD,Malaysia UN Diplomat
 PA,Austria
+CPA,Austria Consul
+DPA,Austria Diplomat
+SPA,Austria Staff
+PAD,Austria UN Diplomat
 PB,Barbados
+CPB,Barbados Consul
+DPB,Barbados Diplomat
+SPB,Barbados Staff
+PBD,Barbados UN Diplomat
 PC,Belize
+CPC,Belize Consul
+DPC,Belize Diplomat
+SPC,Belize Staff
+PCD,Belize UN Diplomat
 PD,United Kingdom
+CPD,United Kingdom Consul
+DPD,United Kingdom Diplomat
+SPD,United Kingdom Staff
+PDD,United Kingdom UN Diplomat
 PF,Bolivia
+CPF,Bolivia Consul
+DPF,Bolivia Diplomat
+SPF,Bolivia Staff
+PFD,Bolivia UN Diplomat
 PG,Belarus
+CPG,Belarus Consul
+DPG,Belarus Diplomat
+SPG,Belarus Staff
+PGD,Belarus UN Diplomat
 PK,Norway
+CPK,Norway Consul
+DPK,Norway Diplomat
+SPK,Norway Staff
+PKD,Norway UN Diplomat
 PL,Chile
+CPL,Chile Consul
+DPL,Chile Diplomat
+SPL,Chile Staff
+PLD,Chile UN Diplomat
 PM,Brunei
+CPM,Brunei Consul
+DPM,Brunei Diplomat
+SPM,Brunei Staff
+PMD,Brunei UN Diplomat
 PR,Argentina
+CPR,Argentina Consul
+DPR,Argentina Diplomat
+SPR,Argentina Staff
+PRD,Argentina UN Diplomat
 PS,Zimbabwe
+CPS,Zimbabwe Consul
+DPS,Zimbabwe Diplomat
+SPS,Zimbabwe Staff
+PSD,Zimbabwe UN Diplomat
 PV,Zaire
+CPV,Zaire Consul
+DPV,Zaire Diplomat
+SPV,Zaire Staff
+PVD,Zaire UN Diplomat
 QD,Burkina Faso
+CQD,Burkina Faso Consul
+DQD,Burkina Faso Diplomat
+SQD,Burkina Faso Staff
+QDD,Burkina Faso UN Diplomat
 QL,St. Kitts & Nevis
+CQL,St. Kitts & Nevis Consul
+DQL,St. Kitts & Nevis Diplomat
+SQL,St. Kitts & Nevis Staff
+QLD,St. Kitts & Nevis UN Diplomat
 QM,Bulgaria
+CQM,Bulgaria Consul
+DQM,Bulgaria Diplomat
+SQM,Bulgaria Staff
+QMD,Bulgaria UN Diplomat
 QN,Laos
+CQN,Laos Consul
+DQN,Laos Diplomat
+SQN,Laos Staff
+QND,Laos UN Diplomat
 QP,Latvia
+CQP,Latvia Consul
+DQP,Latvia Diplomat
+SQP,Latvia Staff
+QPD,Latvia UN Diplomat
 QQ,Lesotho
+CQQ,Lesotho Consul
+DQQ,Lesotho Diplomat
+SQQ,Lesotho Staff
+QQD,Lesotho UN Diplomat
 QR,Malawi
+CQR,Malawi Consul
+DQR,Malawi Diplomat
+SQR,Malawi Staff
+QRD,Malawi UN Diplomat
 QS,Mozambique
+CQS,Mozambique Consul
+DQS,Mozambique Diplomat
+SQS,Mozambique Staff
+QSD,Mozambique UN Diplomat
 QT,New Zealand
+CQT,New Zealand Consul
+DQT,New Zealand Diplomat
+SQT,New Zealand Staff
+QTD,New Zealand UN Diplomat
 QU,Nicaragua
+CQU,Nicaragua Consul
+DQU,Nicaragua Diplomat
+SQU,Nicaragua Staff
+QUD,Nicaragua UN Diplomat
 QV,Niger
+CQV,Niger Consul
+DQV,Niger Diplomat
+SQV,Niger Staff
+QVD,Niger UN Diplomat
 QW,Poland
+CQW,Poland Consul
+DQW,Poland Diplomat
+SQW,Poland Staff
+QWD,Poland UN Diplomat
 QX,Pakistan
+CQX,Pakistan Consul
+DQX,Pakistan Diplomat
+SQX,Pakistan Staff
+QXD,Pakistan UN Diplomat
 QX,Iran (DC only)
+CQX,Iran (DC only) Consul
+DQX,Iran (DC only) Diplomat
+SQX,Iran (DC only) Staff
+QXD,Iran (DC only) UN Diplomat
 QY,Yemen
+CQY,Yemen Consul
+DQY,Yemen Diplomat
+SQY,Yemen Staff
+QYD,Yemen UN Diplomat
 QZ,Indonesia
+CQZ,Indonesia Consul
+DQZ,Indonesia Diplomat
+SQZ,Indonesia Staff
+QZD,Indonesia UN Diplomat
 RB,Rwanda
+CRB,Rwanda Consul
+DRB,Rwanda Diplomat
+SRB,Rwanda Staff
+RBD,Rwanda UN Diplomat
 RC,Saint Vincent and the Grenadines
+CRC,Saint Vincent and the Grenadines Consul
+DRC,Saint Vincent and the Grenadines Diplomat
+SRC,Saint Vincent and the Grenadines Staff
+RCD,Saint Vincent and the Grenadines UN Diplomat
 RD,Senegal
+CRD,Senegal Consul
+DRD,Senegal Diplomat
+SRD,Senegal Staff
+RDD,Senegal UN Diplomat
 RL,Uruguay
+CRL,Uruguay Consul
+DRL,Uruguay Diplomat
+SRL,Uruguay Staff
+RLD,Uruguay UN Diplomat
 RV,San Marino
+CRV,San Marino Consul
+DRV,San Marino Diplomat
+SRV,San Marino Staff
+RVD,San Marino UN Diplomat
 SF,Czech Republic
+CSF,Czech Republic Consul
+DSF,Czech Republic Diplomat
+SSF,Czech Republic Staff
+SFD,Czech Republic UN Diplomat
 SG,Israel
+CSG,Israel Consul
+DSG,Israel Diplomat
+SSG,Israel Staff
+SGD,Israel UN Diplomat
 ST,Dominica
+CST,Dominica Consul
+DST,Dominica Diplomat
+SST,Dominica Staff
+STD,Dominica UN Diplomat
 TF,Algeria
+CTF,Algeria Consul
+DTF,Algeria Diplomat
+STF,Algeria Staff
+TFD,Algeria UN Diplomat
 TF,Iraq (DC only)
+CTF,Iraq (DC only) Consul
+DTF,Iraq (DC only) Diplomat
+STF,Iraq (DC only) Staff
+TFD,Iraq (DC only) UN Diplomat
 TG,Canada
+CTG,Canada Consul
+DTG,Canada Diplomat
+STG,Canada Staff
+TGD,Canada UN Diplomat
 TH,Egypt
+CTH,Egypt Consul
+DTH,Egypt Diplomat
+STH,Egypt Staff
+THD,Egypt UN Diplomat
 TK,Liechtenstein
+CTK,Liechtenstein Consul
+DTK,Liechtenstein Diplomat
+STK,Liechtenstein Staff
+TKD,Liechtenstein UN Diplomat
 TL,El Salvador
+CTL,El Salvador Consul
+DTL,El Salvador Diplomat
+STL,El Salvador Staff
+TLD,El Salvador UN Diplomat
 TM,Iceland
+CTM,Iceland Consul
+DTM,Iceland Diplomat
+STM,Iceland Staff
+TMD,Iceland UN Diplomat
 TN,Nepal
+CTN,Nepal Consul
+DTN,Nepal Diplomat
+STN,Nepal Staff
+TND,Nepal UN Diplomat
 TP,Mauritania
+CTP,Mauritania Consul
+DTP,Mauritania Diplomat
+STP,Mauritania Staff
+TPD,Mauritania UN Diplomat
 TQ,Mali
+CTQ,Mali Consul
+DTQ,Mali Diplomat
+STQ,Mali Staff
+TQD,Mali UN Diplomat
 TR,Italy
+CTR,Italy Consul
+DTR,Italy Diplomat
+STR,Italy Staff
+TRD,Italy UN Diplomat
 TS,Iraq (UN only)
+CTS,Iraq (UN only) Consul
+DTS,Iraq (UN only) Diplomat
+STS,Iraq (UN only) Staff
+TSD,Iraq (UN only) UN Diplomat
 TT,Guyana
+CTT,Guyana Consul
+DTT,Guyana Diplomat
+STT,Guyana Staff
+TTD,Guyana UN Diplomat
 TU,Guinea
+CTU,Guinea Consul
+DTU,Guinea Diplomat
+STU,Guinea Staff
+TUD,Guinea UN Diplomat
 TV,Ghana
+CTV,Ghana Consul
+DTV,Ghana Diplomat
+STV,Ghana Staff
+TVD,Ghana UN Diplomat
 TW,Gambia
+CTW,Gambia Consul
+DTW,Gambia Diplomat
+STW,Gambia Staff
+TWD,Gambia UN Diplomat
 TX,Finland
+CTX,Finland Consul
+DTX,Finland Diplomat
+STX,Finland Staff
+TXD,Finland UN Diplomat
 TY,Grenada
+CTY,Grenada Consul
+DTY,Grenada Diplomat
+STY,Grenada Staff
+TYD,Grenada UN Diplomat
 TZ,Peru
+CTZ,Peru Consul
+DTZ,Peru Diplomat
+STZ,Peru Staff
+TZD,Peru UN Diplomat
 UA,Bahrain
+CUA,Bahrain Consul
+DUA,Bahrain Diplomat
+SUA,Bahrain Staff
+UAD,Bahrain UN Diplomat
 UF,Estonia
+CUF,Estonia Consul
+DUF,Estonia Diplomat
+SUF,Estonia Staff
+UFD,Estonia UN Diplomat
 UH,Spain
+CUH,Spain Consul
+DUH,Spain Diplomat
+SUH,Spain Staff
+UHD,Spain UN Diplomat
 UX,Trinidad & Tobago
+CUX,Trinidad & Tobago Consul
+DUX,Trinidad & Tobago Diplomat
+SUX,Trinidad & Tobago Staff
+UXD,Trinidad & Tobago UN Diplomat
 VF,Thailand
+CVF,Thailand Consul
+DVF,Thailand Diplomat
+SVF,Thailand Staff
+VFD,Thailand UN Diplomat
 VG,Tanzania
+CVG,Tanzania Consul
+DVG,Tanzania Diplomat
+SVG,Tanzania Staff
+VGD,Tanzania UN Diplomat
 VH,Switzerland
+CVH,Switzerland Consul
+DVH,Switzerland Diplomat
+SVH,Switzerland Staff
+VHD,Switzerland UN Diplomat
 VJ,Brazil
+CVJ,Brazil Consul
+DVJ,Brazil Diplomat
+SVJ,Brazil Staff
+VJD,Brazil UN Diplomat
 VK,Singapore
+CVK,Singapore Consul
+DVK,Singapore Diplomat
+SVK,Singapore Staff
+VKD,Singapore UN Diplomat
 VL,Swaziland
+CVL,Swaziland Consul
+DVL,Swaziland Diplomat
+SVL,Swaziland Staff
+VLD,Swaziland UN Diplomat
 VM,Nauru
+CVM,Nauru Consul
+DVM,Nauru Diplomat
+SVM,Nauru Staff
+VMD,Nauru UN Diplomat
 WB,United Arab Emirates
+CWB,United Arab Emirates Consul
+DWB,United Arab Emirates Diplomat
+SWB,United Arab Emirates Staff
+WBD,United Arab Emirates UN Diplomat
 WD,South Korea
+CWD,South Korea Consul
+DWD,South Korea Diplomat
+SWD,South Korea Staff
+WDD,South Korea UN Diplomat
 WM,Western Samoa
+CWM,Western Samoa Consul
+DWM,Western Samoa Diplomat
+SWM,Western Samoa Staff
+WMD,Western Samoa UN Diplomat
 WZ,United Kingdom
+CWZ,United Kingdom Consul
+DWZ,United Kingdom Diplomat
+SWZ,United Kingdom Staff
+WZD,United Kingdom UN Diplomat
 XA,Bangladesh
+CXA,Bangladesh Consul
+DXA,Bangladesh Diplomat
+SXA,Bangladesh Staff
+XAD,Bangladesh UN Diplomat
 XC,Fiji
+CXC,Fiji Consul
+DXC,Fiji Diplomat
+SXC,Fiji Staff
+XCD,Fiji UN Diplomat
 XD,Myanmar
+CXD,Myanmar Consul
+DXD,Myanmar Diplomat
+SXD,Myanmar Staff
+XDD,Myanmar UN Diplomat
 XE,Ghana
+CXE,Ghana Consul
+DXE,Ghana Diplomat
+SXE,Ghana Staff
+XED,Ghana UN Diplomat
 XF,Turkey
+CXF,Turkey Consul
+DXF,Turkey Diplomat
+SXF,Turkey Staff
+XFD,Turkey UN Diplomat
 XG,Norway
+CXG,Norway Consul
+DXG,Norway Diplomat
+SXG,Norway Staff
+XGD,Norway UN Diplomat
 XY,UNKNOWN
+CXY,UNKNOWN Consul
+DXY,UNKNOWN Diplomat
+SXY,UNKNOWN Staff
+XYD,UNKNOWN UN Diplomat
 XZ,Australia
+CXZ,Australia Consul
+DXZ,Australia Diplomat
+SXZ,Australia Staff
+XZD,Australia UN Diplomat
 YA,Armenia
+CYA,Armenia Consul
+DYA,Armenia Diplomat
+SYA,Armenia Staff
+YAD,Armenia UN Diplomat
 YG,Georgia
+CYG,Georgia Consul
+DYG,Georgia Diplomat
+SYG,Georgia Staff
+YGD,Georgia UN Diplomat
 YJ,Tajikistan
+CYJ,Tajikistan Consul
+DYJ,Tajikistan Diplomat
+SYJ,Tajikistan Staff
+YJD,Tajikistan UN Diplomat
 YK,Kazakhstan
+CYK,Kazakhstan Consul
+DYK,Kazakhstan Diplomat
+SYK,Kazakhstan Staff
+YKD,Kazakhstan UN Diplomat
 YM,Moldova
+CYM,Moldova Consul
+DYM,Moldova Diplomat
+SYM,Moldova Staff
+YMD,Moldova UN Diplomat
 YR,Russia
+CYR,Russia Consul
+DYR,Russia Diplomat
+SYR,Russia Staff
+YRD,Russia UN Diplomat
 YT,Turkmenistan
+CYT,Turkmenistan Consul
+DYT,Turkmenistan Diplomat
+SYT,Turkmenistan Staff
+YTD,Turkmenistan UN Diplomat
 YY,Kyrgyzstan
+CYY,Kyrgyzstan Consul
+DYY,Kyrgyzstan Diplomat
+SYY,Kyrgyzstan Staff
+YYD,Kyrgyzstan UN Diplomat
 YZ,Azerbaijan
+CYZ,Azerbaijan Consul
+DYZ,Azerbaijan Diplomat
+SYZ,Azerbaijan Staff
+YZD,Azerbaijan UN Diplomat

@@ -34,12 +34,12 @@ app.get('*', function(req,res,next){
 /* home page route */
 app.get('/', function(req,res){
 	console.log('Index loaded');
-	res.render('index');
+	res.render('login');
 });
 
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
-	var query = req.body.query.toUpperCase();
+	var query = '*' + req.body.query.toUpperCase() + '*';
 	var result = '';
 	client.get(query, function(err, reply){
 		if (reply != null){
