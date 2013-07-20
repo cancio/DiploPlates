@@ -39,7 +39,7 @@ app.get('/', function(req,res){
 
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
-	var query = '*' + req.body.query.toUpperCase() + '*';
+	var query = req.body.query.toUpperCase();
 	var result = '';
 	client.get(query, function(err, reply){
 		if (reply != null){
