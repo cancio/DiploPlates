@@ -1,7 +1,7 @@
 var mongodb = require('mongodb'),
 	mongoose = require('mongoose');
 	
-var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ || 'mongodb://localhost/test';
+var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/test';
 
 mongoose.connect(mongoUri);
 var db = mongoose.connection;
