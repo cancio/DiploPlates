@@ -1,9 +1,10 @@
 var port = process.env.PORT || 8080,
 	app = require('./app').init(port),
-	client = require('redis-url').connect(process.env.REDISTOGO_URL);
 	twilio = require('twilio'),
-	twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN),
-	fs = require('fs');
+	fs = require('fs'),
+	database = require('./db');
+	
+var twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 
 loadCountries();
 
@@ -16,8 +17,12 @@ function loadCountries(){
 		
 		for (var i = 0; i < lines.length; i++){
 			currline = lines[i].split(',');
-		    client.set(currline[0], currline[1], function(err, reply){
-    			console.log(reply.toString());
+		    database.create({ code: currline[0], country: currline[1]},  function(err, doc){
+		    	if(!err){
+    				console.log(doc.toString());
+    			} else {
+    				console.log("Database error: " + err);
+    			}
     		});
 		}
 	});
@@ -40,15 +45,29 @@ app.get('/', function(req,res){
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
 	var query = req.body.query.toUpperCase();
+	var reg = new RegExp(query, "i");
 	var result = '';
-	client.get(query, function(err, reply){
-		if (reply != null){
-			console.log('Reply: ' + reply.toString());
-			result = reply.toString();
-			res.render('results', {key: query, value: result});
+	database.find({ $or : [{ 'country': {$regex: reg} }, { 'code':  {$regex: reg} }]}, function(err, result) {
+		if (!err){
+			if (result.length > 0){
+				var smsText = '';
+				console.log('Reply: ' + result.toString());
+				for (var i = 0; i < result.length; i++){
+					smsText += result[i].code + ' - ' + result[i].country;
+					console.log((i+1) < result.length);
+					if ((i+1) < result.length){
+						smsText += ', '; 
+					}
+				}
+				console.log('Result: ' + smsText);
+				res.render('results', {result: result});
+			} else {
+				res.render('no-results');
+			}
 		}
 		else {
 			res.render('no-results');
+			console.log('Database error: ' + err);
 		}
 	});
 });
@@ -57,11 +76,22 @@ app.post('/respondToSMS', function(req, res){
 	//if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim().toUpperCase();
 		res.header('Content-Type', 'text/xml');
-		client.get(query, function(err, reply){
-			if (reply != null){
-				console.log('Reply: ' + reply.toString());
-				result = reply.toString();
-				res.send('<Response><Sms>' + result + '</Sms></Response>');
+		database.find({ $or : [{ 'country': {$regex: reg} }, { 'code':  {$regex: reg} }]}, function(err, result) {
+			if (!err){
+				if (result.length > 0){
+					var smsText = '';
+					console.log('Reply: ' + result.toString());
+					for (var i = 0; i < result.length; i++){
+						smsText += result[i].code + ' - ' + result[i].country;
+						if ((i+1) < result.length){
+							smsText += ', '; 
+						}
+					}
+					console.log('Result: ' + smsText);
+					res.send('<Response><Sms>' + smsText + '</Sms></Response>');
+				} else {
+					res.send('<Response><Sms>No plate found for ' + query + '</Sms></Response>');
+				}
 			}
 			else {
 				res.send('<Response><Sms>No plate found for ' + query + '</Sms></Response>');

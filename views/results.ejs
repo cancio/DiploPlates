@@ -1,6 +1,23 @@
 <% layout('layout') -%>
-<% block('results', '<p>') -%>
-<% block('results', key) -%>
-<% block('results', ' - ') -%>
-<% block('results', value) -%>
-<% block('results', '</p>') -%>
+<div>
+	<% if (typeof result != 'undefined') { %>
+	<div>
+		<table class="results table table-striped">
+			<thead>
+				<tr>
+					<th>Code</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody>
+			<% result.forEach(function(obj) { %>
+				<tr>
+					<td><%= obj.code %></td>
+					<td><%= obj.country %></td>
+				</tr>
+			<% }) %>
+			</tbody>
+		</table>
+	</div>
+	<% } %>
+</div>
