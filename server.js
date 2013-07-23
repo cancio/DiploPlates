@@ -82,20 +82,23 @@ app.post('/respondToSMS', function(req, res){
 				if (result.length > 0){
 					var smsText = '';
 					console.log('Reply: ' + result.toString());
+					smsText += '<Response>';
 					for (var i = 0; i < result.length; i++){
-						smsText += result[i].code + ' - ' + result[i].country;
-						if ((i+1) < result.length){
-							smsText += ', '; 
+						if (i < 5) {
+							smsText += '<sms>' + i + '. ' result[i].code + ' - ' + result[i].country + '</sms>';
+						} else {
+							smsText += '<sms>Only first 4 out of ' + result.length + ' results returned</sms>';
 						}
 					}
+					smsText += '</Response>';
 					console.log('Result: ' + smsText);
-					res.send('<Response><Sms>' + smsText + '</Sms></Response>');
+					res.send(smsText);
 				} else {
-					res.send('<Response><Sms>No plate found for ' + query + '</Sms></Response>');
+					res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
 				}
 			}
 			else {
-				res.send('<Response><Sms>No plate found for ' + query + '</Sms></Response>');
+				res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
 			}
 		});
 	//}
