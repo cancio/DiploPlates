@@ -6,7 +6,7 @@ var port = process.env.PORT || 8080,
 	
 var twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 
-loadCountries();
+//loadCountries();
 
 function loadCountries(){
 	var currline = [];
