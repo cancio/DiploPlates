@@ -85,7 +85,7 @@ app.post('/respondToSMS', function(req, res){
 					smsText += '<Response>';
 					for (var i = 0; i < result.length; i++){
 						if (i < 5) {
-							smsText += '<sms>' + i + '. ' result[i].code + ' - ' + result[i].country + '</sms>';
+							smsText += '<sms>' + i + '. ' + result[i].code + ' - ' + result[i].country + '</sms>';
 						} else {
 							smsText += '<sms>Only first 4 out of ' + result.length + ' results returned</sms>';
 						}
