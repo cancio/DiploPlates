@@ -47,7 +47,7 @@ app.post('/submit', function(req,res){
 	var query = req.body.query.toUpperCase();
 	var reg = new RegExp(query, "i");
 	var result = '';
-	database.find({ $or : [{ 'country': {$regex: reg} }, { 'code':  {$regex: reg} }]}, function(err, result) {
+	database.find({ 'code':  {$regex: reg} }, {}, {}, function(err, result) {
 		if (!err){
 			if (result.length > 0){
 				var smsText = '';
@@ -62,10 +62,29 @@ app.post('/submit', function(req,res){
 				console.log('Result: ' + smsText);
 				res.render('results', {result: result});
 			} else {
-				res.render('no-results');
+				database.find({ 'country': {$regex: reg} }, {}, {}, function(err, result) {
+					if (!err) {
+						if (result.length > 0){
+							console.log('Reply: ' + result.toString());
+							for (var i = 0; i < result.length; i++){
+								smsText += result[i].code + ' - ' + result[i].country;
+								console.log((i+1) < result.length);
+								if ((i+1) < result.length){
+									smsText += ', '; 
+								}
+							}
+							console.log('Result: ' + smsText);
+							res.render('results', {result: result});
+						} else {
+							res.render('no-results');
+						}
+					} else {
+						res.render('no-results');
+						console.log('Database error: ' + err);
+					}
+				});
 			}
-		}
-		else {
+		} else {
 			res.render('no-results');
 			console.log('Database error: ' + err);
 		}
@@ -83,11 +102,13 @@ app.post('/respondToSMS', function(req, res){
 					var smsText = '';
 					console.log('Reply: ' + result.toString());
 					smsText += '<Response>';
+					var x = 0;
 					for (var i = 0; i < result.length; i++){
+					 	x++;
 						if (i < 5) {
-							smsText += '<sms>' + i + '. ' + result[i].code + ' - ' + result[i].country + '</sms>';
+							smsText += '<sms>' + x + '. ' + result[i].code + ' - ' + result[i].country + '</sms>';
 						} else {
-							smsText += '<sms>Only first 4 out of ' + result.length + ' results returned</sms>';
+							smsText += '<sms>Only first 5 out of ' + result.length + ' results returned</sms>';
 							break;
 						}
 					}
