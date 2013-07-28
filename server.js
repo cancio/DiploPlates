@@ -91,12 +91,14 @@ app.post('/submit', function(req,res){
 	});
 });
 
+//database.find({ $or : [{ 'country': {$regex: reg} }, { 'code':  {$regex: reg} }]}, function(err, result) {
+
 app.post('/respondToSMS', function(req, res){
 	//if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim().toUpperCase();
 		res.header('Content-Type', 'text/xml');
 		var reg = new RegExp(query, "i");
-		database.find({ $or : [{ 'country': {$regex: reg} }, { 'code':  {$regex: reg} }]}, function(err, result) {
+		database.find({ $or : [{ 'code':  {$regex: reg} }, { 'country': {$regex: reg} }]}, function(err, result) {
 			if (!err){
 				if (result.length > 0){
 					var smsText = '';
