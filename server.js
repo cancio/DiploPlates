@@ -4,7 +4,7 @@ var port = process.env.PORT || 8080,
 	fs = require('fs'),
 	database = require('./db');
 	
-var twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
+//var twilClient = new twilio.RestClient(process.env.ACCOUNT_SID, process.env.AUTH_TOKEN);
 
 //loadCountries();
 
@@ -62,19 +62,19 @@ app.post('/submit', function(req,res){
 				console.log('Result: ' + smsText);
 				res.render('results', {result: result});
 			} else {
-				database.find({ 'country': {$regex: reg} }, {}, {}, function(err, result) {
+				database.find({ 'country': {$regex: reg} }, {}, {}, function(err, result2) {
 					if (!err) {
-						if (result.length > 0){
-							console.log('Reply: ' + result.toString());
-							for (var i = 0; i < result.length; i++){
-								smsText += result[i].code + ' - ' + result[i].country;
-								console.log((i+1) < result.length);
-								if ((i+1) < result.length){
+						if (result2.length > 0){
+							console.log('Reply: ' + result2.toString());
+							for (var i = 0; i < result2.length; i++){
+								smsText += result2[i].code + ' - ' + result2[i].country;
+								console.log((i+1) < result2.length);
+								if ((i+1) < result2.length){
 									smsText += ', '; 
 								}
 							}
 							console.log('Result: ' + smsText);
-							res.render('results', {result: result});
+							res.render('results', {result: result2});
 						} else {
 							res.render('no-results');
 						}
@@ -98,7 +98,7 @@ app.post('/respondToSMS', function(req, res){
 		var query = req.param('Body').trim().toUpperCase();
 		res.header('Content-Type', 'text/xml');
 		var reg = new RegExp(query, "i");
-		database.find({ $or : [{ 'code':  {$regex: reg} }, { 'country': {$regex: reg} }]}, function(err, result) {
+		database.find({ 'code':  {$regex: reg} }, {}, {}, function(err, result) {
 			if (!err){
 				if (result.length > 0){
 					var smsText = '';
@@ -118,11 +118,38 @@ app.post('/respondToSMS', function(req, res){
 					console.log('Result: ' + smsText);
 					res.send(smsText);
 				} else {
-					res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
+					database.find({ 'country': {$regex: reg} }, {}, {}, function(err, result2) {
+						if (!err) {
+							if (result2.length > 0){
+								var smsText = '';
+								console.log('Reply: ' + result2.toString());
+								smsText += '<Response>';
+								var x = 0;
+								for (var i = 0; i < result2.length; i++){
+									x++;
+									if (i < 5) {
+										smsText += '<sms>' + x + '. ' + result2[i].code + ' - ' + result2[i].country + '</sms>';
+									} else {
+										smsText += '<sms>Only first 5 out of ' + result2.length + ' results returned</sms>';
+										break;
+									}
+								}
+								smsText += '</Response>';
+								console.log('Result: ' + smsText);
+								res.send(smsText);
+							} else {
+								res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
+							}
+						} else {
+							res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
+							console.log('Database error: ' + err);
+						}
+					});
 				}
 			}
 			else {
 				res.send('<Response><Sms>No plates found for ' + query + '</Sms></Response>');
+				console.log('Database error: ' + err);
 			}
 		});
 	//}
