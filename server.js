@@ -45,6 +45,7 @@ app.get('/', function(req,res){
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
 	var query = req.body.query.toUpperCase();
+	query = query.replace(/[0-9]/g, '');
 	var reg = new RegExp(query, "i");
 	var result = '';
 	database.find({ 'code':  {$regex: reg} }, {}, {}, function(err, result) {
@@ -96,6 +97,7 @@ app.post('/submit', function(req,res){
 app.post('/respondToSMS', function(req, res){
 	//if(twilio.validateExpressRequest(req, process.env.AUTH_TOKEN)) {
 		var query = req.param('Body').trim().toUpperCase();
+		query = query.replace(/[0-9]/g, '');
 		res.header('Content-Type', 'text/xml');
 		var reg = new RegExp(query, "i");
 		database.find({ 'code':  {$regex: reg} }, {}, {}, function(err, result) {
