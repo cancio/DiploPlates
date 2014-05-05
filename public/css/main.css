@@ -5,3 +5,12 @@
 .instructions {
 	display:none;
 }
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.modal {
+	display: none;
+}

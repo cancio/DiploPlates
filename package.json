@@ -4,7 +4,7 @@
 	"dependencies": {
 		"express": "3.1.x",
 		"ejs-locals": "1.0.2",
-		"twilio": "*",
+		"twilio": "1.1.3",
 		"mongodb": "1.3.12",
 		"mongoose": "3.6.15"
 		},
