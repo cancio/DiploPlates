@@ -9,6 +9,7 @@ var port = process.env.PORT || 8080,
 // Calls function to load countries from text file. Should probably do this better
 //loadCountries();
 
+// loads countries and codes from a text file into MongoDB
 function loadCountries(){
 	var currline = [];
 	fs.readFile('./countryList.txt', 'utf-8', function(err, data){
@@ -63,22 +64,19 @@ var search = function(query, callback) {
 app.get('*', function(req,res,next){
 	// this is called for every GET request
 	console.log('Initial request received');
-	//loadCountries();
 	next();
 });
 
-/* home page route */
+// home page route
 app.get('/', function(req,res){
 	console.log('Index loaded');
 	res.render('index');
 });
 
+// search request
 app.post('/submit', function(req,res){
 	console.log('Search submitted');
 	var query = req.body.query.toUpperCase();
-	query = query.replace(/[0-9]/g, '');
-	var reg = new RegExp(query, "i");
-	var result = '';
 	search(query, function searchResult(result, err) {
 		if (result.length > 0 && !err){
 			// Helped me debug results
@@ -99,7 +97,7 @@ app.post('/submit', function(req,res){
 	});
 });
 
-// Responds to requests from Twilio
+// responds to requests from Twilio by building a TwilioML response
 app.post('/respondToSMS', function(req, res){
 	res.header('Content-Type', 'text/xml');
 	var query = req.param('Body').trim().toUpperCase();
@@ -108,7 +106,6 @@ app.post('/respondToSMS', function(req, res){
 	search(query, function searchResultSMS(result, err) {
 		if (result.length > 0 && !err) {
 			var smsText = '';
-			//console.log('Reply: ' + result.toString());
 			smsText += '<Response>';
 			var x = 0;
 			for (var i = 0; i < result.length; i++) {
